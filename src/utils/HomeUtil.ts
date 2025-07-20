@@ -8,7 +8,7 @@
 //     return response.json();
 //   };
 
-export const fetchProduts = async (api:string, qty?:number) => {
-  const response = await fetch( `${api}?limit=25${qty}`);
+export const fetchProduts = async (api:string) => {
+  const response = await fetch( `${api}?limit=25`);
   return response.json();
 };
